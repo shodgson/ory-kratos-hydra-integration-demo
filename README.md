@@ -21,6 +21,8 @@ This demonstration does not set up email verification or recovery, or any sort o
 
 1. Set up the Docker containers. This will take a few minutes.
 ```sh
+git clone git@github.com:shodgson/ory-kratos-hydra-integration-demo.git
+cd ory-kratos-hydra-integration-demo
 docker compose -f quickstart.yml up --build
 ```
 
