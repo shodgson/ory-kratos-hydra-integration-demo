@@ -5,13 +5,13 @@ Set up a service for user registration and login that can provide Oauth2 tokens.
 
 ```mermaid
 flowchart TD
-    A[Web app #1] <-->|Oauth2 tokens| C
+    A[Web app #1] <--> |Oauth2 tokens| C
     B[Web app #2] <--> |Oauth2 tokens| C
     C[Hydra] <--> Kratos
     subgraph Kratos
-    D[User registration 
-    - email/password]
-    E[User login]
+        D[User registration 
+        - email/password]
+        E[User login]
     end
 ```
 
