@@ -48,7 +48,7 @@ curl --request POST \
 }'
 ```
 
-3. In a browser, request an authorization code by opening: `http://127.0.0.1:4444/oauth2/auth?client_id=$CLIENT_ID&redirect_uri=http%3A%2F%2F127.0.0.1%3A5555%2Fcallback&response_type=code&state=1102398157&scope=offline%20profile`. Replace `$CLIENT_ID` with the client ID generated in Step 2. After registering and logging in, you will be redirected to the non-existent page `http://127.0.0.1:5555/callback?code=ory_ac...`. Record the code query parameter.
+3. In a browser, request an authorization code by opening: `http://127.0.0.1:4444/oauth2/auth?client_id=$CLIENT_ID&redirect_uri=http%3A%2F%2F127.0.0.1%3A5555%2Fcallback&response_type=code&state=1102398157&scope=offline%20openid`. Replace `$CLIENT_ID` with the client ID generated in Step 2. After registering and logging in, you will be redirected to the non-existent page `http://127.0.0.1:5555/callback?code=ory_ac...`. Record the code query parameter.
 
 4. Exchange the code for an auth token, replacing $CLIENT_ID and $AUTH_CODE.
 ```sh
