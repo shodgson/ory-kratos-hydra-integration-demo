@@ -17,6 +17,10 @@ flowchart TD
 
 This demonstration does not set up email verification or recovery, or any sort of federated login. It is designed to run in local development mode with zero consideration for security.
 
+## Video demo
+
+[<img src="https://i.imgur.com/AiKuzpP.png">](https://youtu.be/F6ZKrxf8LuQ)
+
 ## Set up
 
 1. Set up the Docker containers. This will take a few minutes.
