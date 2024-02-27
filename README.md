@@ -9,8 +9,8 @@ flowchart TD
     B[Web app #2] <--> |Oauth2 tokens| C
     C[Hydra] <--> Kratos
     subgraph Kratos
-        D[User registration 
-        - email/password]
+        D["User registration 
+        - email/password"]
         E[User login]
     end
 ```
