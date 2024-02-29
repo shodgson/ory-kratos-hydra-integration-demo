@@ -5,7 +5,7 @@ serve:
 urls:
   self:
     issuer: http://127.0.0.1:4444
-  consent: http://127.0.0.1:3000/consent
+  consent: http://127.0.0.1:4455/consent
   login: http://127.0.0.1:4455/login
   logout: http://127.0.0.1:4455/logout
   identity_provider:

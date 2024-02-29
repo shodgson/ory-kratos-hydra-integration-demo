@@ -28,6 +28,7 @@ services:
       - "4455:4455"
     environment:
       - PORT=4455
+      - HYDRA_ADMIN_URL=http://hydra:4445
       - KRATOS_PUBLIC_URL=http://kratos:4433
       - KRATOS_BROWSER_URL=http://127.0.0.1:4433
       - COOKIE_SECRET=changeme
@@ -98,15 +99,6 @@ services:
         source: ./config
         target: /etc/config/hydra
     restart: on-failure
-    networks:
-      - intranet
-  consent:
-    environment:
-      - HYDRA_ADMIN_URL=http://hydra:4445
-    image: oryd/hydra-login-consent-node:v2.2.0
-    ports:
-      - "3000:3000"
-    restart: unless-stopped
     networks:
       - intranet
 
