@@ -87,8 +87,7 @@ The following ports are used at http://127.0.0.1:
 | 4434 | Kratos admin URL                    |
 | 4444 | Hydra public URL                    |
 | 4445 | Hydra admin URL                     |
-| 3000 | DEMO UI: Hydra consent                    |
-| 4455 | DEMO UI: Kratos sign up, sign in, logout |
+| 4455 | DEMO UI: Kratos sign up, sign in, logout, consent |
 
 ## Clean up
 
